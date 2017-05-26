@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<EVENTOS>
+	<EVENTO>
+			<CODIGO>1</CODIGO>
+			<NOMBRE>Circ du soleil KOOZA</NOMBRE>
+			<LUGAR>Campo Marte</LUGAR>
+			<FECHA>31/03/2018</FECHA>
+			<HORA>10:00</HORA>
+			<DESCRIPCION>
+				De regreso a los orígenes, KOOZA combina arte y acrobacias de payasos al tiempo que explora el miedo, la identidad, el reconocimiento y el poder. El viaje del inocente lo lleva a encontrarse con personajes cómicos de un mundo electrizante lleno de sorpresas, aventuras, audacia y total participación.				
+			</DESCRIPCION>
+			<LOCALIDADES>
+				<LOCALIDAD>
+					<NOMBRE>Adultos</NOMBRE>
+					<PRECIO>400.00</PRECIO>
+				</LOCALIDAD>
+				<LOCALIDAD>
+					<NOMBRE>Niños</NOMBRE>
+					<PRECIO>200.00</PRECIO>
+				</LOCALIDAD>
+				<LOCALIDAD>
+					<NOMBRE>Familia de 4 (2 adultos y 2 niños) hola hola</NOMBRE>
+					<PRECIO>960.00</PRECIO>
+				</LOCALIDAD>
+			</LOCALIDADES>
+			<NOMBRE_IMAGEN>KOOZA.jpg</NOMBRE_IMAGEN>
+			<CATEGORIA>Familiares</CATEGORIA>
+			<TICKETS>9</TICKETS>
+			<NoEventos>0</NoEventos>
+			
+	</EVENTO>
+	
+	<EVENTO>
+			<CODIGO>2</CODIGO>
+			<NOMBRE>Festival Internacional de Jazz en Guatemala</NOMBRE>
+			<LUGAR>Teatro Dick Smith del Instituto Guatemalteco Americano</LUGAR>
+			<FECHA>27/10/2017</FECHA>
+			<HORA>22:00</HORA>
+			<DESCRIPCION>
+				Este 2017 se espera al asistencia de más de 20 mil personas. Además, la participación de 15 grupos, de más de 11 países.
+
+				¿Qué bandas se presentarán?
+					LaFrae Sci and Quartet Groove Diplomacy (Estados Unidos).
+					In Love With (Francia).
+					Trio ELF (Alemania).
+					Thierry Lang Trio (Suiza).
+					Erick Rothenstein Band (Eslovaquia).
+					Yogev Shetrit Trio (Israel).
+					The Shuffle Demons (Canadá).
+			</DESCRIPCION>
+			<LOCALIDADES>
+				<LOCALIDAD>
+					<NOMBRE>Mesas oro</NOMBRE>
+					<PRECIO>275.00</PRECIO>
+				</LOCALIDAD>
+				<LOCALIDAD>
+					<NOMBRE>Mesas platinum</NOMBRE>
+					<PRECIO>500.00</PRECIO>
+				</LOCALIDAD>
+				<LOCALIDAD>
+					<NOMBRE>Mesas black</NOMBRE>
+					<PRECIO>750.00</PRECIO>
+				</LOCALIDAD>
+			</LOCALIDADES>
+			<NOMBRE_IMAGEN>Jazz27102017.jpg</NOMBRE_IMAGEN>
+			<CATEGORIA>Teatro y Culturales</CATEGORIA>
+			<TICKETS>9</TICKETS>
+	</EVENTO>
+	
+	<EVENTO>
+	<CODIGO>3</CODIGO>
+			<NOMBRE>Concierto Symphony of the Goddesses</NOMBRE>
+			<LUGAR>Teatro Nacional</LUGAR>
+			<FECHA>17/07/2017</FECHA>
+			<HORA>19:00</HORA>
+			<DESCRIPCION>
+				Diseñado para ser un viaje tan épico y emocionante como la propia Leyenda.
+			</DESCRIPCION>
+			<LOCALIDADES>
+				<LOCALIDAD>
+					<NOMBRE>General</NOMBRE>
+					<PRECIO>300.00</PRECIO>
+				</LOCALIDAD>				
+			</LOCALIDADES>
+			<NOMBRE_IMAGEN>zelda.jpg</NOMBRE_IMAGEN>
+			<CATEGORIA>Concierto</CATEGORIA>
+			<TICKETS>9</TICKETS>
+	</EVENTO>
+	
+	<EVENTO>
+	<CODIGO>4</CODIGO>
+			<NOMBRE>Pikashuuuu</NOMBRE>
+			<LUGAR>Teatro Nacional</LUGAR>
+			<FECHA>17/07/2017</FECHA>
+			<HORA>19:00</HORA>
+			<DESCRIPCION>
+				Diseñado para ser un viaje tan épico y emocionante como la propia Leyenda.
+			</DESCRIPCION>
+			<LOCALIDADES>
+				<LOCALIDAD>
+					<NOMBRE>General</NOMBRE>
+					<PRECIO>300.00</PRECIO>
+				</LOCALIDAD>				
+			</LOCALIDADES>
+			<NOMBRE_IMAGEN>zelda.jpg</NOMBRE_IMAGEN>
+			<CATEGORIA>Teatro</CATEGORIA>
+			<TICKETS>9</TICKETS>
+	</EVENTO>
+		
+	<EVENTO>
+			<CODIGO>5</CODIGO>
+			<NOMBRE>Dragon ball</NOMBRE>
+			<LUGAR>Dragon ball</LUGAR>
+			<FECHA>17/07/2017</FECHA>
+			<HORA>19:00</HORA>
+			<DESCRIPCION>
+				Dragon ball
+			</DESCRIPCION>
+			<LOCALIDADES>
+				<LOCALIDAD>
+					<NOMBRE>General</NOMBRE>
+					<PRECIO>300.00</PRECIO>
+				</LOCALIDAD>				
+			</LOCALIDADES>
+			<NOMBRE_IMAGEN>Dragon ball</NOMBRE_IMAGEN>
+			<CATEGORIA>Especiales</CATEGORIA>
+			<TICKETS>9</TICKETS>
+	</EVENTO>
+	
+	<EVENTO>
+			<CODIGO>6</CODIGO>
+			<NOMBRE>Barca vs Real</NOMBRE>
+			<LUGAR>Camp Now</LUGAR>
+			<FECHA>24/05/2017</FECHA>
+			<HORA>19:00</HORA>
+			<DESCRIPCION>
+				Gol golGol golGol golGol golGol golGol golGol golGol golGol golGol gol				
+			</DESCRIPCION>
+			<LOCALIDADES>
+				<LOCALIDAD>
+					<NOMBRE>General</NOMBRE>
+					<PRECIO>300.00</PRECIO>
+				</LOCALIDAD>				
+			</LOCALIDADES>
+			<NOMBRE_IMAGEN>imagenl</NOMBRE_IMAGEN>
+			<CATEGORIA>Deportes</CATEGORIA>
+			<TICKETS>9</TICKETS>
+	</EVENTO>
+	
+	<EVENTO>
+			<CODIGO>7</CODIGO>
+			<NOMBRE>Barca vs Bayern</NOMBRE>
+			<LUGAR>Camp Now</LUGAR>
+			<FECHA>24/05/2017</FECHA>
+			<HORA>19:00</HORA>
+			<DESCRIPCION>
+				Gol golGol golGol golGol golGol golGol golGol golGol golGol golGol gol				
+			</DESCRIPCION>
+			<LOCALIDADES>
+				<LOCALIDAD>
+					<NOMBRE>General</NOMBRE>
+					<PRECIO>300.00</PRECIO>
+				</LOCALIDAD>				
+			</LOCALIDADES>
+			<NOMBRE_IMAGEN>imagenl</NOMBRE_IMAGEN>
+			<CATEGORIA>Deportes</CATEGORIA>
+			<TICKETS>9</TICKETS>
+	</EVENTO>
+</EVENTOS>
