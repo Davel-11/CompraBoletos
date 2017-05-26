@@ -23,6 +23,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="<%= request.getContextPath()%>/jquery.tablesorter.js"></script>
+ <script type="text/javascript" src="<%= request.getContextPath()%>/func.js"></script>
   
   <style>
   body {
@@ -137,13 +139,13 @@
             tr:nth-child(even){background-color: #f2f2f2}
       </style>
   
-  <table class="table table-striped"  >  
-      <tr>
-          <td>Evento</td>
-          <td>Tipo  </td>
-          <td>Fechas</td>
-      </tr>
-	
+   <table class="table table-striped" id="myTable" class="tablesorter">
+      <thead class="table table-bordered" id="myTable" class="tablesorter">   
+          <th>Evento</th>
+          <th>Tipo  </th>
+          <th>Fechas</th>   
+      </thead>
+      <tbody>
    <%  
          
         //File xml = new File("C:\\Users\\Davel-11\\Desktop\\Universidad PC\\2017\\Progra 3\\ProyectoProgra3\\web\\ejemploXML.xml");        
@@ -171,7 +173,8 @@
                 }
                  out.println("</div>");
             %> 
-</table>  
+            </tbody>
+        </table>  
               <!-- 
   
   <div class="row">

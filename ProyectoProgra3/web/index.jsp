@@ -100,7 +100,7 @@
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
-  <h3 class="margin">Detalles</h3>
+  <h3 class="margin">Detalles Del Evento</h3>
   
         <style>
             table {
@@ -117,7 +117,7 @@
             tr:nth-child(even){background-color: #f2f2f2}
       </style>
   
-  <table class="table table-striped"  >
+  <table class="table table-striped" >
     
   <%
    try{
@@ -141,7 +141,7 @@
                           
                 
                 out.println("<tr>");
-                out.println("<td>Nombre: </td>");
+                out.println("<td>Evento: </td>");
                 out.println("<td>"+e.getElementsByTagName("NOMBRE").item(0).getTextContent()+"</td> ");
                 out.println(" </tr>");
                 
@@ -178,6 +178,23 @@
                 out.println("<td>"+e.getElementsByTagName("TICKETS").item(0).getTextContent()+"</td> ");
                 out.println(" </tr>");
                                 
+                    HttpSession sess = request.getSession();                                                            
+                   
+                    String NombreEvento = e.getElementsByTagName("NOMBRE").item(0).getTextContent();
+                    sess.setAttribute("NombreEvento",NombreEvento);
+                    
+                    String Fecha = e.getElementsByTagName("FECHA").item(0).getTextContent();
+                    sess.setAttribute("Fecha",Fecha);
+                    
+                    String Lugar = e.getElementsByTagName("LUGAR").item(0).getTextContent();
+                    sess.setAttribute("Lugar",Lugar);
+                    
+                    String Horario = e.getElementsByTagName("HORA").item(0).getTextContent();
+                    sess.setAttribute("Horario",Horario);
+                   
+                                                        
+                    int numeroBoletosDisponibles = Integer.parseInt(e.getElementsByTagName("TICKETS").item(0).getTextContent());
+                    sess.setAttribute("numeroBoletosDisponibles",numeroBoletosDisponibles);
                 
                 
                 NodeList localidades = e.getElementsByTagName("LOCALIDAD");
@@ -199,13 +216,16 @@
                         out.println("<td>"+e2.getElementsByTagName("PRECIO").item(0).getTextContent()+"</td> ");
                         out.println(" </tr>");
                         
+                         String CostoBoleto = e2.getElementsByTagName("PRECIO").item(0).getTextContent();
+                         sess.setAttribute("CostoBoleto",CostoBoleto);
+                        
                         
                     }               
                 }  
-                 out.println("<tr>");
-                 out.println("<td>Descrpcion: </td>");
-                 out.println("<td>"+e.getElementsByTagName("DESCRIPCION").item(0).getTextContent()+"</td> ");
-                 out.println(" </tr>");
+                 //out.println("<tr>");
+                 //out.println("<td>Descrpcion: </td>");
+                 //out.println("<td>"+e.getElementsByTagName("DESCRIPCION").item(0).getTextContent()+"</td> ");
+                 //out.println(" </tr>");
                  
                  
             }
@@ -217,18 +237,45 @@
             
         }
   
+                   
+                    
+                    //-------------------                    
+                        // HttpSession sess = request.getSession();                                  
+                        // String UserInfo = request.getParameter("email");
+                        // sess.setAttribute("UserInfo", UserInfo);
+                        
+                            
+
   
   %>
-                   <tr>
-                       <td>                     
-                                        
-                    </td>
-                    <td>                     
-                      <button type="button" class="btn btn-primary btn-lg">Comprar Ahora</button>                      
-                    </td>
-                  </tr>
+                   
   
 </table>
+             
+                  </br>
+                  </br>
+                <form class="form-inline" name="form1" method="post" action="<%= request.getContextPath()+"/CompraPaso1.jsp" %>">
+                    <div class="form-group">
+                      <label for="exampleInputName2">No de Boletos Disponibles</label>
+                      
+                      <input  name="boletosDisponibles" type="number" class="form-control" id="disabledInput" 
+                           placeholder="<% HttpSession sess = request.getSession();                                    
+                                        int nodis = (Integer)sess.getAttribute("numeroBoletosDisponibles");
+                                        out.print(nodis);%>"                           
+                           value="<%out.print(nodis);%>"
+                      readonly="true">
+                    </div>
+                    <div class="form-group" >
+                      <label for="exampleInputEmail2">Numero de Boletos a Comprar</label>
+                      <input  name="boletosComprados" type="number" class="form-control" id="exampleInputEmail2" placeholder="0" value="0">
+                    </div>
+                    
+                    
+                    </br>
+                    </br>
+                    <button type="submit" class="btn btn-primary btn-lg">Comprar Ahora</button>
+              </form>
+  
   
   
 </div>

@@ -46,7 +46,7 @@
   .bg-3 { 
       background-color: #ffffff; /* White */
       color: #555555;
-      min-height: 700px;
+      min-height: 500px;
   }
   .bg-4 { 
       background-color: #2f2f2f; /* Black Gray */
@@ -82,87 +82,46 @@
         <span class="icon-bar"></span>                        
       </button>
         
-      
-       <a class="navbar-brand" href="<%=request.getContextPath()%>/page2.jsp">Inicio</a>
+        <a class="navbar-brand" href="<%=request.getContextPath()%>/page2.jsp">Inicio</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-          
-        <li><a href='<%=request.getContextPath()+"/conciertos.jsp?id="+"Concierto"%>'>Conciertos</a></li>                
+       <li><a href='<%=request.getContextPath()+"/conciertos.jsp?id="+"Concierto"%>'>Conciertos</a></li>                
         <li><a href='<%=request.getContextPath()+"/deporte.jsp?id="+"Deporte"%>'>Deportes</a></li>                
         <li><a href='<%=request.getContextPath()+"/teatro.jsp?id="+"Teatro"%>'>Teatro</a></li>                
         <li><a href='<%=request.getContextPath()+"/familiares.jsp?id="+"Familiares"%>'>Familiares</a></li>                
         <li><a href='<%=request.getContextPath()+"/especiales.jsp?id="+"Especiales"%>'>Especiales</a></li>                
-        <li><a href='<%=request.getContextPath()+"/estudiantes.jsp?id="+"Estudiantes"%>'>Estudiantes</a></li>         
-        
-             
+        <li><a href='<%=request.getContextPath()+"/estudiantes.jsp?id="+"Estudiantes"%>'>Estudiantes</a></li>    
       </ul>
     </div>
   </div>
 </nav>
 
 
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+   <img src="mariano.png" style="width:15%" alt="Image" align="middle" >
+   </br>
+   </br>
+   <h2 class="margin">Ingenieria en Systemas 2017 </h2>
+   <h2 class="margin">Inga. Rosalba Peralta </h2>
+   <h2 class="margin">Programacion 3</h2>
+   <h2 class="margin">Programacion 3</h2>
+    
+  
+</div>
+
+ 
+
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Conciertos</h3><br>
+ 
+  <h3 class="margin">Christian Altan</h3>
+  <h3 class="margin">Rolando Vasquez</h3>
   
-     <style>
-            table {
-                border-collapse: collapse;
-                width: 80%;
-            }
-
-            th, td {
-                text-align: left;
-                color: black;
-                padding: 8px;
-                
-            }
-
-            tr:nth-child(even){background-color: #f2f2f2}
-      </style>
   
-  <table class="table table-striped"  >  
-      <tr>
-          <td>Evento</td>
-          <td>Categoria</td>
-           <td>Fechas</td>
-      </tr>
-	
-   <%  
-         
-        //File xml = new File("C:\\Users\\Davel-11\\Desktop\\Universidad PC\\2017\\Progra 3\\ProyectoProgra3\\web\\ejemploXML.xml");        
-        File xml = new File("/home/xspacein/appservers/apache-tomcat-7.0.56/webapps/ProyectoProgra3/ejemploXML.xml");        
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-        DocumentBuilder db = dbf.newDocumentBuilder();
-        Document doc = db.parse(xml);
-        doc.getDocumentElement().normalize();  
-                 
-        NodeList eventos = doc.getElementsByTagName("EVENTO");
-         out.println("<div class='row'>");
-                for(int i=0;i<eventos.getLength();i++){
-                    Node evento = eventos.item(i);
-                    if(evento.getNodeType()== Node.ELEMENT_NODE){
-                        Element e=(Element) evento;
-                       // out.println("<p>Nombre: </p>"+e.getElementsByTagName("NOMBRE").item(0).getTextContent());                                                      
-                            if(e.getElementsByTagName("CATEGORIA").item(0).getTextContent().contains(""+request.getParameter("id")+"")){
-                                out.println("<tr>");                               
-                                out.println("<td><a href="+request.getContextPath()+"/index.jsp?id="+e.getElementsByTagName("CODIGO").item(0).getTextContent()+">"+e.getElementsByTagName("NOMBRE").item(0).getTextContent()+"</a></td> ");
-                                out.println("<td>"+e.getElementsByTagName("CATEGORIA").item(0).getTextContent()+"</td> ");
-                                out.println("<td>"+e.getElementsByTagName("FECHA").item(0).getTextContent()+"</td> ");                            
-                                out.println(" </tr>");
-                            }
-                    }
-           
-                }
-                 out.println("</div>");
-            %> 
-</table>  
-           
-          
-
-
-  
+   
 </div>
 
 <!-- Footer -->
@@ -172,3 +131,4 @@
 
 </body>
 </html>
+

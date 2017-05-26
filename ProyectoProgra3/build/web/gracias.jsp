@@ -101,13 +101,8 @@
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
-   <img src="mariano.png" style="width:15%" alt="Image" align="middle" >
-   </br>
-   </br>
-   <h2 class="margin">Ingenieria en Systemas 2017 </h2>
-   <h2 class="margin">Inga. Rosalba Peralta </h2>
-   <h2 class="margin">Programacion 3</h2>
-   <h2 class="margin">Programacion 3</h2>
+  <h3 class="margin">Felicidades Tu Compra fue Realizada Exitosamente</h3>
+  
     
   
 </div>
@@ -116,9 +111,8 @@
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
- 
-  <h3 class="margin">Christian Altan</h3>
-  <h3 class="margin">Rolando Vasquez</h3>
+  <h1 class="margin">Gracias Por Tu Compra</h1><br>
+  
   
   
    
@@ -131,4 +125,3 @@
 
 </body>
 </html>
-
